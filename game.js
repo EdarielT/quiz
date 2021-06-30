@@ -14,15 +14,14 @@ let availableQues = [];
 
 let questions = [];
 
-fetch("questions.json")
+fetch ('questions.json;)
     .then(res => {
         return res.json();
     })
     .then(loadedQuestions => {
         questions = loadedQuestions;
-        
         startGame();
-    });
+    }));
 
 //constants
 
